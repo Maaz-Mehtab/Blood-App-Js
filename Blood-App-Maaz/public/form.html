@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="lib/boot.css">
+    <link href="signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/style.css">
+
+
+
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Custom styles for this template -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAHKyKImyck-LmQJa9RZTPR-CU3HsGShes",
+            authDomain: "maaz-opticks.firebaseapp.com",
+            databaseURL: "https://maaz-opticks.firebaseio.com",
+            projectId: "maaz-opticks",
+            storageBucket: "maaz-opticks.appspot.com",
+            messagingSenderId: "1039181226854"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark justify-content-between mb-3">
+
+
+        <h1 id="fo" class="text-white text-danger ">Post Blood Requirement</h1>
+
+        <form class="form-inline">
+            <button class="btn btn-outline-warning mr-1" onclick="location='form.html'" type="button">Add New</button>
+            <button class="btn btn-outline-danger mr-1" onclick="location='home.html'" type="button">Home</button>
+            <button class="btn btn-outline-success mr-1" onclick="location='feed.html'" type="button">Feeds</button>
+            <button class="btn btn-outline-primary ml-1" onclick="location='login.html'" type="button">Logout</button>
+        </form>
+    </nav>
+
+
+
+    <div class="row">
+
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="col-md-8">
+
+            <form class="form-signin">
+                <!--<h2 class="form-signin-heading">Post Blood Requirement</h2>-->
+
+
+                <label for="inputState" class="form-label text-danger">Blood Group</label>
+                <select id="blood" class="form-control mb-3">Blood Group
+      
+        <option value="a+">A +</option>
+        <option value="a-">A -</option>
+         <option value="b+">B +</option>        
+          <option value="b-">B _</option>
+           <option value="o+">O +</option>
+            <option value="o-">O -</option>
+               </select>
+
+
+
+
+                <label for="inputName" class="form-label text-success">No of Unit Required</label>
+                <input type="text" id="requi" class="form-control mb-3" placeholder="No of Input Required" required autofocus>
+
+                <label for="inputState" class="form-label text-danger">Urgency</label>
+                <select id="urgent" class="form-control mb-3">Urgency
+      <option value="1 Most Urgent">1 Most Urgent</option>
+        <option value="2 Most Urgent">2</option>
+        <option value="3 Urgent">3</option>
+         <option value="4 Urgent">4</option>        
+          <option value="5 Urgent">5</option>
+        
+               </select>
+
+
+
+                <label for="inputState" class="form-label text-success">Country</label>
+                <select id="country" class="form-control mb-3">
+      <option value="Pakistan">Pakistan</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+         <option value="England">England</option>        
+          <option value="China">China</option>
+          <option value="Japan">Japan</option>
+          <option value="Afghanistan">Afghanistan</option>
+          <option value="Srilanka">Srilanka</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="Australia">Australia</option>
+        
+               </select>
+
+
+
+
+                <label for="inputState" class="form-label text-success">City</label>
+                <select id="city" class="form-control mb-3">
+      <option value="karachi">Karachi</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabad">Islamabad</option>
+         <option value="Faislabad">Faislabad</option>        
+          <option value="Hyderabad">Hyderabad</option>
+        
+               </select>
+
+
+
+
+                <label for="inputState" class="form-label text-danger">Hospital</label>
+                <select id="hospital" class="form-control mb-3">
+      <option value="Zia Uddin">Zia Uddin</option>
+        <option value="Agha Khan">Agha Khan</option>
+        <option value="Liaquat National">Liaquat National</option>
+         <option value="Civil">Civil</option>        
+          <option value="Abbasi Saheed">Abbasi Saheed</option>
+        
+               </select>
+
+
+
+
+
+
+
+
+
+                <label for="inputNo" class="form-label text-success">Relation with Patient</label>
+                <input type="text" id="rel" class="form-control mb-3" placeholder="Your Relation with Patient" required>
+
+                <label for="inputNo" class="form-label text-success">Number</label>
+                <input type="text" id="number" class="form-control mb-3" placeholder="Contact Number" required>
+
+
+                <label for="inputNo" class="form-label text-success">Information</label>
+                <input type="text" id="info" class="form-control mb-3" placeholder="Additional Information" required>
+            </form>
+            <center>
+                <button class="col-3 btn btn-danger " onclick="submit()">Submit</button></center>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+
+
+
+
+    </div>
+    <br><br><br><br><br>
+
+
+
+
+
+</body>
+<script src="form.js"></script>
+
+</html>

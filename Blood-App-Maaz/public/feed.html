@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="lib/boot.css">
+    <link href="signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/style.css">
+
+
+
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Custom styles for this template -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAHKyKImyck-LmQJa9RZTPR-CU3HsGShes",
+            authDomain: "maaz-opticks.firebaseapp.com",
+            databaseURL: "https://maaz-opticks.firebaseio.com",
+            projectId: "maaz-opticks",
+            storageBucket: "maaz-opticks.appspot.com",
+            messagingSenderId: "1039181226854"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark justify-content-between mb-3">
+
+        <h1 id="feed" class="text-white text-danger ">Post Blood Requirement</h1>
+
+        <form class="form-inline">
+            <button id="btn1" class="btn btn-outline-warning mr-1" onclick="location='form.html'" type="button">    New</button>
+            <button id="btn2" class="btn btn-outline-danger mr-1" onclick="location='home.html'" type="button">Home</button>
+            <button id="btn3" class="btn btn-outline-success mr-1" onclick="location='feed.html'" type="button">Feeds</button>
+            <button id="btn4" class="btn btn-outline-primary" onclick="location='login.html'" type="button">Logout</button>
+        </form>
+
+
+    </nav>
+
+
+    <div class="container">
+        <div id="body"></div>
+    </div>
+
+
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/poper.js"></script>
+    <script src="lib/bootsta.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>-->
+</body>
+<script src="feed.js"></script>
+
+</html>
